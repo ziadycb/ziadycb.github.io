@@ -1,14 +1,12 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+
 
 var zoom =100;
 var x=0;
 var lens_temp;
 var disabler =0;
 var lens_temp2,box_temp;
-var img;
+var img,img_temp;
+var my_jquery_function;
 
 function removeElement(elementId) {
   // Removes an element from the document
@@ -18,8 +16,8 @@ function removeElement(elementId) {
 
 
 function imageZoom(imgID, resultID ,mapID) {
-
   
+
 if (disabler==0){
   box_temp= document.getElementById("myresult");
     console.log(x);
@@ -152,7 +150,8 @@ function launch (ID, _ID2,_class,mapID){
 }
 
 function myFunction() {
-  
+    // button.parentElement.insertBefore(map, button);
+    img.setAttribute("usemap","#workmap");
     removeElement("img-zoom-lens");
     document.getElementById("myresult").style.display = "none";
     disabler=1;
@@ -162,6 +161,7 @@ function myFunction() {
 
   function myFunction2() {
     if(disabler==1){
+      img.setAttribute("usemap","NO");
       disabler=0;
       document.getElementById("myresult").style.display = "block";
       imageZoom("myimage", "myresult");
@@ -184,8 +184,12 @@ function myFunction() {
         btnEle.html("Explore image");
       }
       else {
+        
+        
         myFunction2();
         btnEle.html("Explore Site");
       }
     }); 
 });
+
+
