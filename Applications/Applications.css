@@ -4,22 +4,39 @@
 body {
   color: #5a5a5a;
   height: 100%;
+
 }
 
 .FoL
 {
-  color: darkred;
-  text-shadow: 0 0 7px darkred;
+  color: #63d6ff;
+  text-shadow: 0 0 7px #63d6ff;
 }
 
 .FoL:hover
 {
-  color: darkred;
+  color: #63d6ff;
   text-shadow: 0 0 7px black;
+}
+
+/* Hiding scrollbar
+-------------------------------------------------- */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
 /* fixed side navbar
 -------------------------------------------------- */
+
 
 .fixed-side-navbar {
   position: fixed;
@@ -85,6 +102,14 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+.carousel-indicators>li
+{
+  padding: 6px;
+  border-radius: 100%;
+  width:0;
+  height:0;
+  margin: 10px;
+}
 
 /* Carousel base class */
 .carousel {
@@ -120,7 +145,7 @@ body {
 /* Background image  */
  .bgx
 {
-    background-image: url("../Resources/Asus.jpg");
+    background-image: url("../Resources/AugReal.jpg");
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15vh;
@@ -199,12 +224,11 @@ section {
 /* Featurettes
 ------------------------- */
 
-
-
 .row
 {
   width: 100.9%;
 } 
+
 
 .featurettedivider
 {
@@ -381,7 +405,6 @@ footer {
 }
 
 @media (max-width: 767px){
-  
   .baner-content {
     padding-top: 30vh;
   }
@@ -407,7 +430,7 @@ footer {
   .service-content .left-text .line-dec {
     width: 45px;
     height: 3px;
-    background-color: red;
+    background-color: blue;
     margin: 20px auto 20px auto;
   }
 

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-  <script src="Applications.js"></script>
+  <script src="Theory-CS.js"></script>
   <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
   
 
@@ -30,7 +30,7 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="Applications.css" rel="stylesheet">
+  <link href="Theory-CS.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,6 +38,7 @@
   <!-- CAROUSEL -->
 
   <header>
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators">
@@ -46,45 +47,47 @@
         <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
       </ol>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Resources/Applications.jpg" class="d-block w-100" alt="Image did not load">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Media/Apps: Social media are interactive computer-mediated technologies that facilitate the creation or sharing of 
-                information, ideas, career interests, and other forms of expression via virtual communities and networks.</h5>
-              <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Social_media" role="button">Learn more</a>
-            </div>
-          </div>
+      <div class="carousel-inner">
 
-          <div class="carousel-item">
-            <img src="../Resources/Vision.jpg" class="d-block w-100" alt="Image did not load">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level 
-                understanding from digital images or videos. From the perspective of engineering, it seeks to understand and automate 
-                tasks that the human visual system can do.</h5>
-              <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Computer_vision" role="button">Learn more</a>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="../Resources/Cybersecurity.jpg" class="d-block w-100" alt="Image did not load">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Cybersecurity is the protection of computer systems and networks from the theft of or damage to their hardware, 
-                  software, or electronic data, as well as from the disruption or misdirection of the services they provide.</h5>
-                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Computer_security" role="button">Learn more</a>
-            </div>   
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="../Resources/Cryptography.jpg" class="d-block w-100"  alt="Image could not load">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cryptography is the practice and study of techniques for secure communication in the presence of third parties 
+              called adversaries.</h5>
+            <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Cryptography" role="button">Learn more</a>
           </div>
         </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../Resources/Quantum-Computing.jpg" class="d-block w-100"   alt="Image could not load">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Quantum computing is the use of quantum phenomena such as superposition and entanglement to perform computation. 
+              Computers that perform quantum computations are known as quantum computers.</h5>
+            <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Quantum_computing" role="button">Learn more</a>
+          </div>
+        </div>
 
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../Resources/HardwarePurple.jpg" class="d-block w-100"   alt="Image could not load">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Computer hardware includes the physical parts of a computer, such as the case,central processing unit (CPU), monitor, 
+              mouse, keyboard, computer data storage, graphics card, sound card, speakers and motherboard.</h5>
+            <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Computer_hardware" role="button">Learn more</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+
     </div>
 
 
@@ -103,10 +106,10 @@
               <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Applications</a>
+              <a class="nav-link" href="../Applications/Applications.html">Applications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Theory-CS/Theory-CS.html">Theory of CS</a>
+              <a class="nav-link active" aria-current="page" href="#">Theory of CS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="../Computer-engineering/Computer-engineering.html">Computer Engineering</a>
@@ -127,7 +130,7 @@
           <a class="nav-link" href="#services"><span>Info</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#miniCoursel"><span>Games</span></a>
+          <a class="nav-link" href="#miniCoursel"><span>Languages</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#image-map"><span>Navigation</span></a>
@@ -152,7 +155,7 @@
 
 
 
-    <!-- START THE DIVISIONS -->
+    <!-- START THE FEATURES -->
 
 
     <!-- First Division -->
@@ -163,21 +166,20 @@
 
           <div class="col-md-4">
             <div class="left-text service-item">
-              <h4>More About Computer Engineering</h4>
+              <h4>More About Theory of CS</h4>
               <div class="line-dec"></div>
               <p>
-                Application software (app for short) is a program or group of programs designed for end-users.
-                 Examples of an application include a word processor, a spreadsheet, an accounting application, a web browser, 
-                 an email client, a media player, a file viewer, simulators, a console game, or a photo editor etc....
+                Theoretical computer science (TCS) is a subset of general computer science and mathematics that focuses on mathematical
+                 aspects of computer science such as the theory of computation, lambda calculus, and type theory.
               </p>
               <ul>
-                <li>- Artificial Intelligence</li>
-                <li>- Computer vision</li>
-                <li>- Cybersecurity</li>
-                <li>- AR/VR</li>
+                <li>- Algorithms</li>
+                <li>- Parallel computation</li>
+                <li>- Data structures</li>
+                <li>- Quantum computation</li>
               </ul>
               <div class="primary-button">
-                <a href="https://en.wikipedia.org/wiki/Application_software">Learn More About SE</a>
+                <a href="https://en.wikipedia.org/wiki/Computer_engineering">Learn More About CE</a>
               </div>
             </div>
           </div>
@@ -188,44 +190,44 @@
 
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Artificial Intelligence</h4>
+                  <h4>Algorithm</h4>
                   <div class="line-dec"></div>
                   <p>
-                    Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to
-                     think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits 
-                     associated with a human mind such as learning and problem-solving.
+                    An algorithm is a step-by-step procedure for calculations. Algorithms are used for calculation, 
+                    data processing, and automated reasoning.
                   </p>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Computer vision</h4>
+                  <h4>Parallel computation</h4>
                   <div class="line-dec"></div>
                   <p>
-                    Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding
-                     from digital images or videos. From the perspective of engineering, it seeks to understand and automate tasks that the
-                      human visual system can do.
+                    Parallel computing is a form of computation in which many calculations are carried out simultaneously,
+                     operating on the principle that large problems can often be divided into smaller ones, which are then solved
+                      "in parallel".
                   </p>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Cybersecurity</h4>
+                  <h4>Data structures</h4>
                   <div class="line-dec"></div>
                   <p>
-                    Cybersecurity is the protection of internet-connected systems such as hardware, software and data from cyber-threats
+                    A data structure is a particular way of organizing data in a computer so that it can be used efficiently.
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>AR/VR</h4>
+                  <h4>Quantum computation</h4>
                   <div class="line-dec"></div>
                   <p>
-                  Augmented reality (AR) adds digital elements to a live view often by using the camera on a smartphone. 
-                  Virtual reality (VR) implies a complete immersion experience that shuts out the physical world.
+                    A quantum computer is a computation system that makes direct use of quantum-mechanical phenomena, 
+                    such as superposition and entanglement, to perform operations on data. 
+                    Quantum computers are different from digital computers based on transistors.
                   </p>
                 </div>
               </div>
@@ -246,52 +248,36 @@
               <section id="first-tab-group" class="tabgroup">
 
                 <div id="tab1">
-                  <img src="../Resources/PacMan.jpg" alt="Image could not load"/>
+                  <img src="../Resources/Languages1.jpg" alt="Image could not load"/>
                   <div>
                     <p>
-                      Retrogaming, also known as classic gaming and old school gaming, is the playing and/or 
-                      collecting of older personal computer, console, and/or arcade video games in contemporary times.
-                      Usually, retrogaming is based upon systems that are obsolete or discontinued.
-                      An example would be: PacMan
-                     <img src="../Resources/PacManGif.gif" alt="Image could not load">
+                      JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. 
+                      JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
                    </p>
                     </div>
                 </div>
 
                 <div id="tab2">
-                  <img src="../Resources/Starcraft.jpg" alt="Image could not load" />
+                  <img src="../Resources/Languages2.jpg" alt="Image could not load" />
                   <p>
-                    Real-time strategy (RTS) is a sub-genre of strategy video games in which the game does not progress incrementally 
-                    in turns. Real-time strategy games allow for all players to simultaneously play the game in "real-time".
-                    An example would be: Starcraft II
-                     <img src="../Resources/StarcraftIcon.jpg" alt="Image could not load">
+                    Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.
+                    Node.js is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser
                   </p>
                 </div>
 
                 <div id="tab3">
-                  <img src="../Resources/Witcher-III.jpg" alt="Image could not load" />
+                  <img src="../Resources/Languages3.jpg" alt="Image could not load" />
                   <p>
-                    An RPG is a game in which players assume the roles of characters in a fictional setting. Players take responsibility 
-                    for acting out these roles within a narrative, either through literal acting, or through a process of structured 
-                    decision-making regarding character development. An example would be: Witcher
-                     <img src="../Resources/WitcherIcon.png" alt="Image could not load">
-                  </p>
-                </div>
-                <div id="tab4">
-                  <img src="../Resources/WoW-Bastion.jpg" alt="Image could not load" />
-                  <p>
-                    A massively multiplayer online role-playing game (MMORPG) is a video game that combines aspects of a role-playing video 
-                    game and a massively multiplayer online game. An example would be : World of Warcraft
-                    <img src="../Resources/WoW-Icon.png" alt="Image could not load" >
+                    Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy 
+                    emphasizes code readability with its notable use of significant whitespace
                   </p>
                 </div>
               </section>
 
               <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                <li><a href="#tab1" class="active">Retro Age</a></li>
-                <li><a href="#tab2">RTS Age</a></li>
-                <li><a href="#tab3">RPG Age</a></li>
-                <li><a href="#tab4">MMORPG Age</a></li>
+                <li><a href="#tab1" class="active">Java Script</a></li>
+                <li><a href="#tab2">HTML/JSnode</a></li>
+                <li><a href="#tab3">VSCode/Python</a></li>
               </ul>
             </div>
           </div>
@@ -305,7 +291,7 @@
       <div class="row">
         <div class="map">
           <div class="d-flex justify-content-center">
-            <img src="Map_CS.jpg" class="myimage" usemap="#workmap" width="800" height="500">
+            <img src="Map-TCS.jpg" class="myimage" usemap="#workmap" width="800" height="500">
           </div>
         </div>
       </div>
@@ -315,15 +301,16 @@
 
     <map name="workmap" class="map" id="map2">
 
-      <area target="_blank" alt="Theory-CS.html" title="Theory CS" href="../Theory-CS/Theory-CS.html"
-        coords="1,287,17,283,96,286,115,284,125,273,187,268,219,272,272,272,288,273,336,275,387,278,413,284,452,281,466,256,465,234,488,228,544,232,555,214,549,176,549,163,534,147,534,100,548,82,535,48,488,44,447,48,413,42,395,45,356,48,287,44,149,45,1,45"
-        shape="poly">
+      <area target="_blank" alt="Applications.html" title="Applications" 
+      href="../Applications/Applications.html" 
+      coords="1,288,17,285,113,285,125,274,222,274,333,275,415,284,461,282,477,295,491,321,467,345,461,360,460,385,485,389,566,389,578,363,590,351,569,326,575,309,693,309,729,321,799,326,799,498,1,497,0,454,-1,413,-1,338,6,356" 
+      shape="poly">
 
       <area target="_blank" alt="Computer Engineering" title="Computer Engineering"
         href="../Computer-engineering/Computer-engineering.html"
         coords="536,48,548,81,536,100,535,145,549,161,556,213,547,233,465,237,455,279,463,281,483,300,492,321,469,346,461,360,460,384,564,388,576,364,587,350,566,326,577,309,698,309,727,320,799,325,799,53"
         shape="poly">
-
+        
     </map>
 
 
